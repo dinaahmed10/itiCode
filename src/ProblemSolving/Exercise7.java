@@ -2,7 +2,7 @@ package ProblemSolving;
 
 import java.util.Scanner;
 
-public class multiplicationTable7 {
+public class Exercise7 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
