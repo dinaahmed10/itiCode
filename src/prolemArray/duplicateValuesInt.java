@@ -3,7 +3,7 @@ package prolemArray;
  
 import java.util.Scanner;
 
-public class duplicateValues {
+public class duplicateValuesInt {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
