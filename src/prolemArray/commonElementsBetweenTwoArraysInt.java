@@ -4,7 +4,9 @@ public class commonElementsBetweenTwoArraysInt {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-/* 15. Write a Java program to find common elements between two integer arrays. **/
+/* 
+ 15. Write a Java program to find common elements between two integer arrays.
+ */
 		int [] arr1= {4,3,6,2,8,1,9};
 		int [] arr2= {9,5,1,4,3,10,2,8};
 		int []arr=new int[arr1.length];
