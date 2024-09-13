@@ -1,12 +1,12 @@
 package oopPrinciples.Inheritance;
 
 public class Employee {
-	  String name;///no modifier
-	private int employeeId;   //private
-	protected double salary;   //protected
+	private String name; 
+	private int employeeId;   
+	private double salary;   
 	 
 	
-	public Employee()   //public
+	public Employee()    
 	{
 		
 	}

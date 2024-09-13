@@ -13,7 +13,7 @@ public Programmer(String name, int employeeId, double salary,String titel,List<S
 		super(name,employeeId,salary);
 		this.titel=titel;
 		this.programmingProjects=programmingProjects;
-		super.name=name;
+		 
 		 
 	}
 
