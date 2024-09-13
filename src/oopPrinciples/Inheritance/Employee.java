@@ -1,0 +1,48 @@
+package oopPrinciples.Inheritance;
+
+public class Employee {
+	  String name;///no modifier
+	private int employeeId;   //private
+	protected double salary;   //protected
+	 
+	
+	public Employee()   //public
+	{
+		
+	}
+	public Employee(String name, int employeeId, double salary) {
+        this.name = name;
+        this.employeeId = employeeId;
+        this.salary = salary;
+    }
+	
+	public String displayInfo() {
+        return "Employee Name: " + name + "\nID: " + employeeId + "\nSalary: $" + String.format("%.2f", salary);
+    }
+    
+	
+	// Method to give a raise
+    public String giveRaise(double amount) {
+        salary += amount;
+        return "New salary for " + name + ": $" + String.format("%.2f", salary);
+    }
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	 
+}
