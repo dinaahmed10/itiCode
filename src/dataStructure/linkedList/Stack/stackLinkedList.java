@@ -1,6 +1,15 @@
 package dataStructure.linkedList.Stack;
 
- 
+ class Node {
+    int data;
+    Node next;
+
+    // Constructor to create a new node
+    public Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
 
 public class stackLinkedList {
 	private Node top;
@@ -16,8 +25,6 @@ public class stackLinkedList {
 	
 	public void Push(int date) {
 	 Node node=new Node(date);
-	 node.data=date;
-	 node.next=null;
 	 if(isEmpty()) {
 		top=node; 
 	 }else {
