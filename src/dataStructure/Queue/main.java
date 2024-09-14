@@ -30,13 +30,11 @@ public class main {
 		 circularQueue.enQueue(5);
 		 circularQueue.enQueue(7);
 		 circularQueue.display();
-		 System.out.println("frist element : "+circularQueue.Peek());
-		 System.out.println("\n//////////////////");
+		 System.out.println("frist element : "+circularQueue.Peek()); 
 		 circularQueue.enQueue(7);
 		 System.out.println("dequeue : "+circularQueue.deQueue());
 		 circularQueue.display();
-		 circularQueue.enQueue(1);
-		 System.out.println("////////////////////////////////////////////////////////////////////"); 
+		 circularQueue.enQueue(1); 
 		 circularQueue.display();
 		 System.out.println("frist element : "+circularQueue.Peek());
 		
