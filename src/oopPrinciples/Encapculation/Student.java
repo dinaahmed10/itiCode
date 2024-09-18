@@ -2,11 +2,12 @@ package oopPrinciples.Encapculation;
 
 public class Student {
 	private String name;
-	private int id;
-	private int age;
+	private final int id;
+	private static int age =17;
 	private String email; 
 	
-	public Student(){
+	public Student(int id){
+		this.id = id;
 		
 	}
 	
@@ -27,10 +28,7 @@ public class Student {
 	public int getId() {
 		return id;
 	}
-	public void setId(int id) {
-		this.id = id;
-	}
-
+ 
 	public String getEmail() {
 		return email;
 	}
