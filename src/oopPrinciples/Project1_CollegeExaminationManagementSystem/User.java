@@ -6,6 +6,8 @@ public abstract class User {
 	private String Username;
 	private String email;
 	
+	
+	//overloading
 	public User(){
 		countUser++; 
 	}
@@ -21,7 +23,7 @@ public abstract class User {
 		return id;
 	}
 	 
-	protected static int numOfUsers() {
+	protected static int count() {
 		return countUser;
 	}
  

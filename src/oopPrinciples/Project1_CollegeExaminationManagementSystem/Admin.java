@@ -6,8 +6,8 @@ import java.util.List;
 public class Admin extends User{
 	private String Password;
 	private static int countAdmin=0;
-	private List<Student> Students=new ArrayList(); 
-	
+	private List<Student> Students=new ArrayList<Student>(); 
+	private List<Lecturer> Lecturers=new ArrayList<Lecturer>();  
 	public Admin(){
 		
 	}
@@ -22,9 +22,14 @@ public Admin(String Username,String Password, String email){
 	public void setPassword(String password) {
 		Password = password;
 	}
-	public static int numofAdmin() {
+	public static int count() {
 		return countAdmin;
 	}
+@Override
+	public String toString() {
+		return "Admin [id=" + id + ", Username=" + super.getUsername() + ", email=" + super.getEmail() + "]";
+	} 
+	//////////////////Students/////////////////////
 	public List<Student> ListStudents() {
 		return Students;
 	}
@@ -72,5 +77,66 @@ public Admin(String Username,String Password, String email){
 		System.out.println("Student with ID " + id + " not found.");
 		 
 	}
-
+	
+	
+	//////////////////Lecturers/////////////////////
+	public void ListOfLecturer(){
+		for(int i=0;i<Lecturers.size();i++) {
+			 System.out.println(Lecturers.get(i).toString());
+		}
+	}
+	public void setAllLecturer(List<Student> Lecturers){
+		Students = Lecturers;
+	}
+	public void addLecturer(Lecturer Lecturer){
+		Lecturers.add(Lecturer); 
+		 System.out.println("Added: " + Lecturer.toString());
+	}
+	public void deleteLecturer(int id){
+		 
+		for(int i=0;i<Lecturers.size();i++) {
+			if(Lecturers.get(i).id==id) {
+				Lecturers.remove(i);
+				System.out.println("Deleted Lecturer with ID: " + id);
+				break;
+			}
+		}
+		 
+	}
+	 public void updateLecturer(int id, String newName, String newEmail){
+	        for (int i=0;i<Lecturers.size();i++) {
+	            if (Lecturers.get(i).id==id) {
+	            	Lecturers.get(i).setUsername(newName);
+	            	Lecturers.get(i).setEmail(newEmail); 
+	                System.out.println("Updated: " +  Lecturers.get(i).toString());
+	                return;
+	            }
+	        }
+	 }
+	public void searchLecturer(int id){
+		 
+		for(int i=0;i<Lecturers.size();i++) {
+			if(Lecturers.get(i).id==id) {
+			     System.out.println("Found: " + Lecturers.get(i).toString());
+				return;
+			}
+		}
+		System.out.println("Lecturer with ID " + id + " not found.");
+		 
+	}
+     //////////////////Lecturers/////////////////////
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
