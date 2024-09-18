@@ -3,14 +3,10 @@ package oopPrinciples.Project1_CollegeExaminationManagementSystem;
  
 
 public class mainCollegeExaminationManagementSystem {
-	public static void main(String[] args) {
-		 
+	public static void main(String[] args) { 
 		
-		  
-		System.out.println("numOfUsers = "+User.count());
-		
-		Admin Admin=new Admin("ahmed","123ahmed","ahmed.gmail.com"); 
-		
+		System.out.println("numOfUsers = "+User.count()); 
+		Admin Admin=new Admin("ahmed","123ahmed","ahmed.gmail.com");  
 		System.out.println( Admin.toString());
 		System.out.println(Admin.getPassword());
 		Admin.setPassword("ahmedAli12345");
@@ -32,7 +28,7 @@ public class mainCollegeExaminationManagementSystem {
 		Admin.searchStudent(2);
 		Admin.ListOfStudents();
 		
-		System.out.println("/////////////////////////\n\n\n/////////////////////////");
+		System.out.println("/////////////////////////\n\nLecturer\n\n/////////////////////////");
 		Admin.addLecturer(new Lecturer("sara ahmed","dr:sara112@gmail.com"));
 		Admin.addLecturer(new Lecturer("ahmed mohmoud","ahmed1112@gmail.com"));
 		Admin.addLecturer(new Lecturer("montaser magdy","mm987@gmail.com"));
@@ -47,6 +43,20 @@ public class mainCollegeExaminationManagementSystem {
 		Admin.searchLecturer(5);
 		Admin.addLecturer(new Lecturer("abdo ali","abdoali@gmail.com"));
 		Admin.ListOfLecturer();
-		
+		System.out.println("/////////////////////////\n\nSubject\n\n/////////////////////////");
+		Admin.addSubject(new Subject("database1"));
+		Admin.addSubject(new Subject("data Structure"));
+		Admin.addSubject(new Subject("data minig"));
+		Admin.ListOfSubject();
+		System.out.println("numOfSubject = "+Subject.count());
+		System.out.println("numOfUsers = "+User.count());
+		Admin.addSubject(new Subject("data mangement"));
+		Admin.updateSubject(3, "database2" );
+		Admin.deleteSubject(3);
+		Admin.searchSubject(2);
+		Admin.searchSubject(3);
+		Admin.searchSubject(5);
+		Admin.addSubject(new Subject("data seience"));
+		Admin.ListOfSubject();
 	}
 }

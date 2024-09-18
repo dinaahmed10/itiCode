@@ -3,11 +3,12 @@ package oopPrinciples.Project1_CollegeExaminationManagementSystem;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Admin extends User{
+public class Admin extends User  implements AdminMangeEntities{
 	private String Password;
 	private static int countAdmin=0;
 	private List<Student> Students=new ArrayList<Student>(); 
-	private List<Lecturer> Lecturers=new ArrayList<Lecturer>();  
+	private List<Lecturer> Lecturers=new ArrayList<Lecturer>();
+	private List<Subject> Subjects=new ArrayList<Subject>();
 	public Admin(){
 		
 	}
@@ -124,7 +125,52 @@ public Admin(String Username,String Password, String email){
 		System.out.println("Lecturer with ID " + id + " not found.");
 		 
 	}
-     //////////////////Lecturers/////////////////////
+     //////////////////Subjects///////////////////// 
+	public void ListOfSubject(){
+		for(int i=0;i<Subjects.size();i++) {
+			 System.out.println(Subjects.get(i).toString());
+		}
+	}
+	public void setAllSubject(List<Subject> Subjects){
+		this.Subjects = Subjects;
+	}
+	public void addSubject(Subject Subject){
+		Subjects.add(Subject); 
+		 System.out.println("Added: " + Subjects.toString());
+	}
+	public void deleteSubject(int id){
+		 
+		for(int i=0;i<Subjects.size();i++) {
+			if(Subjects.get(i).getId()==id) {
+				Subjects.remove(i);
+				System.out.println("Deleted Subject with ID: " + id);
+				break;
+			}
+		}
+		 
+	}
+	 public void updateSubject(int id, String newName){
+	        for (int i=0;i<Subjects.size();i++) {
+	            if (Subjects.get(i).getId()==id) {
+	            	Subjects.get(i).setName(newName); 
+	                System.out.println("Updated: " +  Subjects.get(i).toString());
+	                return;
+	            }
+	        }
+	 }
+	public void searchSubject(int id){
+		 
+		for(int i=0;i<Subjects.size();i++) {
+			if(Subjects.get(i).getId()==id) {
+			     System.out.println("Found: " + Subjects.get(i).toString());
+				return;
+			}
+		}
+		System.out.println("Subject with ID " + id + " not found.");
+		 
+	}
+		 
+	
 	
 	
 	
@@ -140,3 +186,4 @@ public Admin(String Username,String Password, String email){
 	
 	
 }
+
