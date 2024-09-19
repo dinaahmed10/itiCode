@@ -4,7 +4,7 @@ package oopProjects.Project1_CollegeExaminationMangementSystem;
 
 public class mainCollegeExaminationManagementSystem {
 	public static void main(String[] args) { 
-		System.out.println("numOfUsers = "+User.count()); 
+		System.out.println("numOfUsers = "+Person.count()); 
 		Admin Admin=new Admin("ahmed","123ahmed","ahmed.gmail.com");  
 		System.out.println( Admin.toString());
 		System.out.println(Admin.getPassword());
@@ -19,7 +19,7 @@ public class mainCollegeExaminationManagementSystem {
 		Admin.addStudent(new Student("farha hassan","farha34@gmail.com"));
 		System.out.println(Admin.ListStudents());
 		System.out.println("numOfStudent = "+Student.count());
-		System.out.println("numOfUsers = "+User.count());
+		System.out.println("numOfUsers = "+Person.count());
 		Admin.deleteStudent(2);
 		Admin.updateStudent(3, "noura mohamed", "noura123@gmail.com");
 		System.out.println(Admin.ListStudents());
@@ -33,7 +33,7 @@ public class mainCollegeExaminationManagementSystem {
 		Admin.addLecturer(new Lecturer("montaser magdy","mm987@gmail.com"));
 		Admin.ListOfLecturer();
 		System.out.println("numOfStudent = "+Lecturer.count());
-		System.out.println("numOfUsers = "+User.count());
+		System.out.println("numOfUsers = "+Person.count());
 		Admin.addLecturer(new Lecturer("manar magdy","mm111@gmail.com"));
 		Admin.updateLecturer(3, "mantaser magdr", "montaser123@gmail.com");
 		Admin.deleteLecturer(1);
@@ -51,7 +51,7 @@ public class mainCollegeExaminationManagementSystem {
 		Admin.addSubject(Subject3);
 		Admin.ListOfSubject();
 		System.out.println("numOfSubject = "+Subject.count());
-		System.out.println("numOfUsers = "+User.count());
+		System.out.println("numOfUsers = "+Person.count());
 		Subject Subject4=new Subject("data mangement","dm4");
 		Admin.addSubject(Subject4);
 		Admin.updateSubject(3, "database2" );

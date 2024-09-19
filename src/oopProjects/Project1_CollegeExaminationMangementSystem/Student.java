@@ -3,7 +3,7 @@ package oopProjects.Project1_CollegeExaminationMangementSystem;
 import java.util.ArrayList;
 import java.util.List;
 
-public   class Student  extends User {
+public   class Student  extends Person {
 	private static int countStudent=0;
 	 private List<Subject> Subjects = new ArrayList<>();
 	public Student(){

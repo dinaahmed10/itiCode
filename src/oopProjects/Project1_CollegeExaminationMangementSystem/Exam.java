@@ -3,8 +3,8 @@ package oopProjects.Project1_CollegeExaminationMangementSystem;
 import java.util.List;
 
 public class Exam {
-	  private  int id;
-	  private String Subjectcode;
+	   private  int id;
+	   private String Subjectcode;
 	    private String examDate;
 	    private String description;
 	    private String TypeExam;

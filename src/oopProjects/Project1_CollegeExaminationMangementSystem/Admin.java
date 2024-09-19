@@ -3,7 +3,7 @@ package oopProjects.Project1_CollegeExaminationMangementSystem;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Admin extends User implements AdminMangeEntities{
+public class Admin extends Person implements AdminMangeEntities{
 	private String Password;
 	private static int countAdmin=0;
 	private List<Student> Students=new ArrayList<Student>(); 

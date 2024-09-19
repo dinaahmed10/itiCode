@@ -1,21 +1,20 @@
-package oopProjects.Project1_CollegeExaminationMangementSystem;
-
-public abstract class User {
+package oopProjects.Project2_ProjectManagementSystem;
+public abstract class Person {
 	private int id;
 	private static int countUser=0;
-	private String Username;
+	private String name;
 	private String email;
 	
 	
 	//overloading
-	public User(){
+	public Person(){
 		countUser++; 
 	}
  
-	public User(int id,String Username,String email){
+	public Person(int id,String name,String email){
 		 
 		this.id=id;
-		this.Username=Username;
+		this.name=name;
 		this.email=email;
 		countUser++;
 	}
@@ -27,11 +26,11 @@ public abstract class User {
 		return countUser;
 	}
  
-	public String getUsername() {
-		return Username;
+	public String getName() {
+		return name;
 	}
-	public void setUsername(String username) {
-		Username = username;
+	public void setName(String username) {
+		name = username;
 	}
 	public String getEmail() {
 		return email;
@@ -43,7 +42,7 @@ public abstract class User {
 	 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", Username=" + Username + ", email=" + email + "]";
+		return "User [Id=" + id + ", Name=" + name + ", Email=" + email + "]";
 	}
 	
 
