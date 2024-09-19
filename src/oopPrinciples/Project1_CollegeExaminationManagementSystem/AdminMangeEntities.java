@@ -24,5 +24,6 @@ public interface AdminMangeEntities {
 	public void deleteSubject(int id);
 	public void updateSubject(int id, String newName);
 	public void searchSubject(int id);
-	
+	public void assignSubjectToStudent(int IDstudent, String nameSubject);
+	public void assignSubjectToLecturer(int IDlecturer, String nameSubject) ;
 }

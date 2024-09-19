@@ -1,7 +1,7 @@
 package oopPrinciples.Project1_CollegeExaminationManagementSystem;
 
 public abstract class User {
-	protected int id;
+	private int id;
 	private static int countUser=0;
 	private String Username;
 	private String email;
