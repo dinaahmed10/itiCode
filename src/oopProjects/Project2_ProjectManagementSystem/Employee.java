@@ -1,11 +1,15 @@
 package oopProjects.Project2_ProjectManagementSystem;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Employee extends Person{
 	 private String department;
 	 private int entryTime ;
 	 private int exitTime;
 	 private int[][] workinghours = new int[30][2]; //column 2 because 0 for enterTime 1 for exit time
-   	 private int day =0;
+	 private List<Task> Tasks=new ArrayList<Task>(); 
+	 private int day =0;
 	 private static int countEmployee=0;
 		public Employee(){
 			super();
@@ -77,7 +81,25 @@ public class Employee extends Person{
 			}
 			return WorkingHours;
 			
+		} 
+		public void addTask(Task Task) {
+			Tasks.add(Task); 
+			
 		}
+		
+		public List<Task> getTasks() {
+			return Tasks;
+		}
+
+		public void setTasks(List<Task> tasks) {
+			Tasks = tasks;
+		}
+
+		@Override
+		public String toString() {
+			return "Employee [Id=" + super.getId() + ", Name=" + super.getName() + ", Email=" + super.getEmail() + "department=" + department +"Tasks: "+Tasks+ "]";
+		}
+
 		
 		
 }
