@@ -1,4 +1,4 @@
-package oopPrinciples.Project1_CollegeExaminationManagementSystem;
+package oopProjects.Project1_CollegeExaminationMangementSystem;
 
  
 
