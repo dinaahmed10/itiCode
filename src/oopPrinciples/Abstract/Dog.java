@@ -16,5 +16,7 @@ public class Dog extends Animall implements Animal{
 	public void food() {
 		 System.out.println(" food Dog ");	
 	}
-
+	 public void sound() {
+		    System.out.println("My dog sound");
+		  }
 }

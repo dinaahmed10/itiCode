@@ -10,9 +10,13 @@ public class main {
 		Dog.drink();
 		Dog.food();
 		Dog.sleep();
+		Dog.sound();
 		Cat Cat=new Cat();
 		Cat.eat();
 		Cat.drink();
+		Test Test=new Test();
+		Test.display();
+		System.out.println(Constants.add(5, 10) );
 		
 	}
 

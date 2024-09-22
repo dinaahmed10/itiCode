@@ -1,6 +1,6 @@
 package oopPrinciples.Abstract;
 
-public class Cat  implements Animal{
+public class Cat  implements Animal  {
 
 	@Override
 	public void eat() {

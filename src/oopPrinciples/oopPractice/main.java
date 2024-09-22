@@ -1,4 +1,4 @@
-package oopProjects.Project3_RestaurantManagementSystem;
+package oopPrinciples.oopPractice;
 
 public class main {
 
