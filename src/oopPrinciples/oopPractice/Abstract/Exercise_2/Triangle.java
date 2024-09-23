@@ -18,5 +18,25 @@ public class Triangle extends  Shape{
 		System.out.println((width+hieght)*2);
 		
 	}
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void drink() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public int add(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public int sup(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }

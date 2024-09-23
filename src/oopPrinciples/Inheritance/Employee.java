@@ -38,11 +38,13 @@ public class Employee {
 	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
-	public double getSalary() {
+	   public double getSalary() {
 		return salary;
 	}
-	public void setSalary(double salary) {
+	 public void setSalary(double salary) {
 		this.salary = salary;
 	}
-	 
+	final public void printEmployee() {
+		 System.out.println("Employee");
+	 }
 }
